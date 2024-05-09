@@ -5,7 +5,7 @@ This package uses a CSV file to gather texts of different languages for UI Texts
 
 
 CSV file configuration: Your CSV file must be something like this:
-![image](https://github.com/RasoulSh/Localization/assets/17119993/fb2b313f-4843-4fb1-895c-fa0145a1b4c0)
+<img src="https://github.com/RasoulSh/Localization/assets/17119993/fb2b313f-4843-4fb1-895c-fa0145a1b4c0" />
 
 - Key Column: Every text must have a Key so that it can be defined in Unity Text components using its key. Note that the first column’s header should be named “Key”; do not use other names otherwise the file cannot be read.
 
