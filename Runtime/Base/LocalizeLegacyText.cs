@@ -24,6 +24,13 @@ namespace Localization.Base
             get => dontChangeAlignment;
             set => dontChangeAlignment = value;
         }
+
+        public bool DontChangeFont
+        {
+            get => dontChangeFont;
+            set => dontChangeFont = value;
+        }
+        
         /// <summary>
         /// Original text which user sets via editor.
         /// You sould use this value if you need the original string. (to use in a third-party)

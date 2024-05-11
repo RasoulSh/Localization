@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Localization.Base.Enums;
+using UnityEngine;
 
 namespace Localization
 {
@@ -30,6 +31,18 @@ namespace Localization
             instance = this;
             Localization.Initialize();
             isInitialized = true;
+        }
+
+        [ContextMenu(nameof(ChangeToEnglish))]
+        public void ChangeToEnglish()
+        {
+            data.ChangeLanguage(Languages.English, this);
+        }
+        
+        [ContextMenu(nameof(ChangeToPersian))]
+        public void ChangeToPersian()
+        {
+            data.ChangeLanguage(Languages.Persian, this);
         }
     }
 }

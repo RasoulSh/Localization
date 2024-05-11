@@ -21,6 +21,7 @@ namespace RTLTMPro.Editor
 
         private SerializedProperty localizationKeyProp;
         private SerializedProperty dontChangeAlignmentProp;
+        private SerializedProperty dontChangeFontProp;
         
         private bool foldout;
         private LocalizeTmpText tmpro;
@@ -35,6 +36,7 @@ namespace RTLTMPro.Editor
             forceFixProp = serializedObject.FindProperty("forceFix");
             localizationKeyProp = serializedObject.FindProperty("localizationKey");
             dontChangeAlignmentProp = serializedObject.FindProperty("dontChangeAlignment");
+            dontChangeFontProp = serializedObject.FindProperty("dontChangeFont");
             originalTextProp = serializedObject.FindProperty("originalText");
         }
 
@@ -94,6 +96,7 @@ namespace RTLTMPro.Editor
             if (tmpro.richText)
                 fixTagsProp.boolValue = GUILayout.Toggle(fixTagsProp.boolValue, new GUIContent("FixTags"));
             dontChangeAlignmentProp.boolValue = GUILayout.Toggle(dontChangeAlignmentProp.boolValue, new GUIContent("Don't Change Alignment"));
+            dontChangeFontProp.boolValue = GUILayout.Toggle(dontChangeFontProp.boolValue, new GUIContent("Don't Change Font"));
 
             EditorGUILayout.EndHorizontal();
             EditorGUILayout.Space();

@@ -97,6 +97,12 @@ namespace RTLTMPro.Scripts.Runtime
             get => dontChangeAlignment;
             set => dontChangeAlignment = value;
         }
+        
+        public bool DontChangeFont
+        {
+            get => dontChangeFont;
+            set => dontChangeFont = value;
+        }
 
         [SerializeField] protected bool preserveNumbers;
 

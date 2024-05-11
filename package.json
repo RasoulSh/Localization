@@ -1,6 +1,6 @@
 {
   "name": "com.rsh.localization",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Localization",
   "description": "Localization for Unity UI",
   "unity": "2021.3",

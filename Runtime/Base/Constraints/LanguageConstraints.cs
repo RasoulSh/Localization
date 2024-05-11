@@ -40,7 +40,7 @@ namespace Localization.Base.Constraints
             { Languages.Turkish, LanguageAlphabetic.Latin },
             { Languages.Chinese, LanguageAlphabetic.Chinese },
             { Languages.Arabic, LanguageAlphabetic.Arabic },
-            { Languages.Persian, LanguageAlphabetic.Arabic },
+            { Languages.Persian, LanguageAlphabetic.ArabicPersian },
             { Languages.Russian, LanguageAlphabetic.Cyrillic },
             { Languages.Hindi, LanguageAlphabetic.Devanagari },
             { Languages.Japanese, LanguageAlphabetic.Hiragana },
