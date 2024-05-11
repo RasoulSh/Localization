@@ -12,7 +12,7 @@ namespace Localization.Base
         [SerializeField] private string localizationKey;
         protected static char LineEnding = '\n';
         [SerializeField] private bool dontChangeAlignment = true;
-        [SerializeField] private bool dontChangeFont = true;
+        [SerializeField] private bool dontChangeFont = false;
         
         public string LocalizationKey
         {

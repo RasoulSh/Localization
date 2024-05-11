@@ -85,7 +85,7 @@ namespace RTLTMPro.Scripts.Runtime
         }
         [SerializeField] private  string localizationKey;
         [SerializeField] private bool dontChangeAlignment = true;
-        [SerializeField] private bool dontChangeFont = true;
+        [SerializeField] private bool dontChangeFont = false;
 
         public string LocalizationKey
         {
