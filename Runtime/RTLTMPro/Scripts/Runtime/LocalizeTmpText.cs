@@ -1,4 +1,4 @@
-﻿using Localization;
+using Localization;
 using Localization.Base;
 using Localization.Base.Enums;
 using TMPro;
@@ -187,8 +187,18 @@ namespace RTLTMPro.Scripts.Runtime
                 base.text = originalText;
             } else
             {
-                isRightToLeftText = true;
-                base.text = GetFixedText(originalText);
+                var currentAlphabetics = LocalizationAccessor.Localization.CurrentAlphabetic;
+                isRightToLeftText = currentAlphabetics == LanguageAlphabetic.Arabic ||
+                                    currentAlphabetics == LanguageAlphabetic.ArabicPersian;
+                if (isRightToLeftText)
+                {
+                    base.text = GetFixedText(originalText);   
+                }
+                else
+                {
+                    isRightToLeftText = false;
+                    base.text = originalText;
+                }
             }
 
             havePropertiesChanged = true;
