@@ -9,11 +9,7 @@ namespace RTLTMPro.Scripts.Runtime
     [ExecuteInEditMode]
     public class LocalizeTmpText : TextMeshProUGUI,ILocalizeText
     {
-#if TMP_VERSION_2_1_0_OR_NEWER
         public override string text
-#else
-        public new string text
-#endif
         {
             get { return base.text; }
             set
