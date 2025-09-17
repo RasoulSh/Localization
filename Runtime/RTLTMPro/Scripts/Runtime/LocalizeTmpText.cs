@@ -181,8 +181,17 @@ namespace RTLTMPro.Scripts.Runtime
             {
                 isRightToLeftText = false;
                 base.text = originalText;
-            } else
+            }
+            else
             {
+#if UNITY_EDITOR
+                if (Application.isPlaying == false)
+                {
+                    base.text = originalText; 
+                    havePropertiesChanged = true;
+                    return;
+                }
+#endif
                 var currentAlphabetics = LocalizationAccessor.Localization.CurrentAlphabetic;
                 isRightToLeftText = currentAlphabetics == LanguageAlphabetic.Arabic ||
                                     currentAlphabetics == LanguageAlphabetic.ArabicPersian;
